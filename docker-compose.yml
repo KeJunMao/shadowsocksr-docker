@@ -10,3 +10,8 @@ services:
       - 51348:51348
     environment:
       - PASSWORD=pwd
+      - METHOD=aes-128-ctr
+      - PROTOCOL=auth_aes128_md5
+      - PROTOCOLPARAM=32
+      - OBFS=tls1.2_ticket_auth_compatible
+      - TIMEOUT=300
